@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RickAndMorty.Api.Client.DataAccess.Contracts\RickAndMorty.Api.Client.DataAccess.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Characters\" />
+    <Folder Include="Episodes\" />
+    <Folder Include="Locations\" />
+  </ItemGroup>
+
 </Project>

@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\RickAndMorty.Api.Client.Entities\RickAndMorty.Api.Client.Domain.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

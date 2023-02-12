@@ -1,6 +1,6 @@
 ﻿namespace RickAndMorty.Api.Client.Domain.Entities.Characters
 {
-    internal enum Gender
+    public enum Gender
     {
         Female,
         Male,
