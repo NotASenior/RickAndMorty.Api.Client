@@ -1,6 +1,6 @@
-﻿using RickAndMorty.Api.Client.Entities.CrossCutting;
+﻿using RickAndMorty.Api.Client.Domain.Entities.CrossCutting;
 
-namespace RickAndMorty.Api.Client.Entities.Locations
+namespace RickAndMorty.Api.Client.Domain.Entities.Locations
 {
     internal class Location : BaseEntity
     {

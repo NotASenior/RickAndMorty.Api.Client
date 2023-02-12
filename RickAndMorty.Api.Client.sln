@@ -19,7 +19,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{C31D7699-C6D1-427B-BD63-FCFBF062B26F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RickAndMorty.Api.Client.Entities", "src\Domain\RickAndMorty.Api.Client.Entities\RickAndMorty.Api.Client.Entities.csproj", "{4B9E6CE5-C8B9-4A4C-8C2D-AE1DEC4138D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RickAndMorty.Api.Client.Domain.Entities", "src\Domain\RickAndMorty.Api.Client.Entities\RickAndMorty.Api.Client.Domain.Entities.csproj", "{4B9E6CE5-C8B9-4A4C-8C2D-AE1DEC4138D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RickAndMorty.Api.Client.DataAccess.Contracts", "src\DataAccess\RickAndMorty.Api.Client.DataAccess.Contracts\RickAndMorty.Api.Client.DataAccess.Contracts.csproj", "{E681CCC3-E34E-4A6A-A5D7-B888FAA935D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RickAndMorty.Api.Client.DataAccess", "src\DataAccess\RickAndMorty.Api.Client.DataAccess\RickAndMorty.Api.Client.DataAccess.csproj", "{B69097B2-2F87-43FB-AE91-F5A683230392}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,14 @@ Global
 		{4B9E6CE5-C8B9-4A4C-8C2D-AE1DEC4138D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B9E6CE5-C8B9-4A4C-8C2D-AE1DEC4138D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B9E6CE5-C8B9-4A4C-8C2D-AE1DEC4138D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E681CCC3-E34E-4A6A-A5D7-B888FAA935D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E681CCC3-E34E-4A6A-A5D7-B888FAA935D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E681CCC3-E34E-4A6A-A5D7-B888FAA935D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E681CCC3-E34E-4A6A-A5D7-B888FAA935D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B69097B2-2F87-43FB-AE91-F5A683230392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B69097B2-2F87-43FB-AE91-F5A683230392}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B69097B2-2F87-43FB-AE91-F5A683230392}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B69097B2-2F87-43FB-AE91-F5A683230392}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +55,8 @@ Global
 		{2B148D12-1B58-49E8-91CE-90F150C544A1} = {DA2B89AB-F367-40FB-8D24-A0A2D262033C}
 		{C31D7699-C6D1-427B-BD63-FCFBF062B26F} = {DA2B89AB-F367-40FB-8D24-A0A2D262033C}
 		{4B9E6CE5-C8B9-4A4C-8C2D-AE1DEC4138D3} = {6B37CD19-6978-4754-8CC9-1AACB202E2F1}
+		{E681CCC3-E34E-4A6A-A5D7-B888FAA935D4} = {84DADEED-6160-408C-B90A-C69AE44C262C}
+		{B69097B2-2F87-43FB-AE91-F5A683230392} = {84DADEED-6160-408C-B90A-C69AE44C262C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF862A7A-DF1D-4186-B585-7A30836550DC}

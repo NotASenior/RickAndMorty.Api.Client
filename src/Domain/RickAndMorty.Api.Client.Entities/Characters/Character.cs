@@ -1,6 +1,6 @@
-﻿using RickAndMorty.Api.Client.Entities.CrossCutting;
+﻿using RickAndMorty.Api.Client.Domain.Entities.CrossCutting;
 
-namespace RickAndMorty.Api.Client.Entities.Characters
+namespace RickAndMorty.Api.Client.Domain.Entities.Characters
 {
     internal class Character : BaseEntity
     {

@@ -1,4 +1,4 @@
-﻿namespace RickAndMorty.Api.Client.Entities.CrossCutting
+﻿namespace RickAndMorty.Api.Client.Domain.Entities.CrossCutting
 {
     internal class BaseEntity : BasicEntity
     {

@@ -1,4 +1,4 @@
-﻿namespace RickAndMorty.Api.Client.Entities.Episodes
+﻿namespace RickAndMorty.Api.Client.Domain.Entities.Episodes
 {
     internal class Episode
     {
