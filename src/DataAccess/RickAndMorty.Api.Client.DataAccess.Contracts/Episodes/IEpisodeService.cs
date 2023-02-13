@@ -1,13 +1,12 @@
 ﻿using RickAndMorty.Api.Client.DataAccess.Contracts.CrossCutting;
-using RickAndMorty.Api.Client.DataAccess.Contracts.Static;
 
 namespace RickAndMorty.Api.Client.DataAccess.Contracts.Episodes
 {
     internal interface IEpisodeService
     {
-        EpisodeDto Get(int id);
-        IEnumerable<EpisodeDto> GetSeveral(params int[] ids);
-        Paginated<EpisodeDto> GetAll(int skip = 0, int take = Constants.Pagination.Take);
-        Paginated<EpisodeDto> GetByFilter(EpisodeFilter filter);
+        Task<EpisodeDto?> GetAsync(int id);
+        Task<IEnumerable<EpisodeDto>?> GetSeveralAsync(params int[] ids);
+        Task<Paginated<EpisodeDto>?> GetAllAsync(int page = 1);
+        Task<Paginated<EpisodeDto>?> GetByFilterAsync(EpisodeFilter filter);
     }
 }

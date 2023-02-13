@@ -2,7 +2,7 @@
 
 namespace RickAndMorty.Api.Client.DataAccess.Contracts.Characters
 {
-    internal class CharacterFilter
+    public class CharacterFilter
     {
         public string? Name { get; set; }
         public CharacterStatus? Status { get; set; }

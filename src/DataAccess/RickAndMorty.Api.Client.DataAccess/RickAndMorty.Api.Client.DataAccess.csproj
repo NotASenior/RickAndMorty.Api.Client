@@ -7,13 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\CrossCutting\RickAndMorty.Api.Client.CrossCutting\RickAndMorty.Api.Client.CrossCutting.csproj" />
     <ProjectReference Include="..\RickAndMorty.Api.Client.DataAccess.Contracts\RickAndMorty.Api.Client.DataAccess.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Characters\" />
     <Folder Include="Episodes\" />
     <Folder Include="Locations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RestSharp" Version="108.0.3" />
   </ItemGroup>
 
 </Project>
