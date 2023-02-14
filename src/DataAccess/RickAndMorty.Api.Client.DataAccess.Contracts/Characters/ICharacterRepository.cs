@@ -2,7 +2,7 @@
 
 namespace RickAndMorty.Api.Client.DataAccess.Contracts.Characters
 {
-    public interface ICharacterService
+    public interface ICharacterRepository
     {
         Task<CharacterDto?> GetAsync(int id);
         Task<IEnumerable<CharacterDto>?> GetSeveralAsync(params int[] ids);

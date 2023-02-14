@@ -5,11 +5,11 @@ using RickAndMorty.Api.Client.DataAccess.Contracts.Static;
 
 namespace RickAndMorty.Api.Client.DataAccess.Episodes
 {
-    public class EpisodeService : IEpisodeService
+    public class EpisodeRepository : IEpisodeRepository
     {
         private readonly IRestClientWrapper _restClient;
 
-        public EpisodeService(IRestClientWrapper restClient)
+        public EpisodeRepository(IRestClientWrapper restClient)
         {
             _restClient = restClient;
         }

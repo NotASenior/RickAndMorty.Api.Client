@@ -5,11 +5,11 @@ using RickAndMorty.Api.Client.DataAccess.Contracts.Static;
 
 namespace RickAndMorty.Api.Client.DataAccess.Characters
 {
-    public class CharacterService : ICharacterService
+    public class CharacterRepository : ICharacterRepository
     {
         private readonly IRestClientWrapper _restClient;
 
-        public CharacterService(IRestClientWrapper restClient)
+        public CharacterRepository(IRestClientWrapper restClient)
         {
             _restClient = restClient;
         }

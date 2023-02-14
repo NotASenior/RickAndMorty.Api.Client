@@ -2,7 +2,7 @@
 
 namespace RickAndMorty.Api.Client.DataAccess.Contracts.Episodes
 {
-    public interface IEpisodeService
+    public interface IEpisodeRepository
     {
         Task<EpisodeDto?> GetAsync(int id);
         Task<IEnumerable<EpisodeDto>?> GetSeveralAsync(params int[] ids);

@@ -2,7 +2,7 @@
 
 namespace RickAndMorty.Api.Client.DataAccess.Contracts.Locations
 {
-    internal interface ILocationService
+    internal interface ILocationRepository
     {
         Task<LocationDto?> Get(int id);
         Task<IEnumerable<LocationDto?>> GetSeveralAsync(params int[] ids);
