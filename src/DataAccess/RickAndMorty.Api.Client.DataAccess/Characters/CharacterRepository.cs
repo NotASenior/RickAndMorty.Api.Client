@@ -1,5 +1,6 @@
 ﻿using RickAndMorty.Api.Client.CrossCutting.Extensions;
 using RickAndMorty.Api.Client.DataAccess.Contracts.Characters;
+using RickAndMorty.Api.Client.DataAccess.Contracts.Exceptions;
 using RickAndMorty.Api.Client.DataAccess.Contracts.CrossCutting;
 using RickAndMorty.Api.Client.DataAccess.Contracts.Static;
 
@@ -14,16 +15,35 @@ namespace RickAndMorty.Api.Client.DataAccess.Characters
             _restClient = restClient;
         }
 
+        /// <summary>
+        /// Returns a paginated list of characters, based on the given filter
+        /// </summary>
+        /// <param name="page"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="DataAccessException"></exception>
         public Task<Paginated<CharacterDto>?> GetAllAsync(int page = 1)
         {
+            if (page <= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(page));
+            }
+
             string url = $"{Constants.Endpoints.Character}{Constants.Endpoints.Page}{page}";
 
             return _restClient.GetAsync<Paginated<CharacterDto>>(url);
         }
 
+        /// <summary>
+        /// Returns a character, based on the given filter
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="DataAccessException"></exception>
         public Task<CharacterDto?> GetAsync(int id)
         {
-            if (id == 0)
+            if (id <= 0)
             {
                 throw new ArgumentOutOfRangeException(nameof(id));
             }
@@ -33,6 +53,13 @@ namespace RickAndMorty.Api.Client.DataAccess.Characters
             return _restClient.GetAsync<CharacterDto>(url);
         }
 
+        /// <summary>
+        /// Returns a paginated list of characters, based on the given filter
+        /// </summary>
+        /// <param name="filter"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="DataAccessException"></exception>
         public Task<Paginated<CharacterDto>?> GetByFilterAsync(CharacterFilter filter)
         {
             if (filter is null)
@@ -85,6 +112,14 @@ namespace RickAndMorty.Api.Client.DataAccess.Characters
             return filterUrl;
         }
 
+        /// <summary>
+        /// Returns a list of characters, based on the given filter
+        /// </summary>
+        /// <param name="ids"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="DataAccessException"></exception>
         public Task<IEnumerable<CharacterDto>?> GetSeveralAsync(params int[] ids)
         {
             if (ids is null)
