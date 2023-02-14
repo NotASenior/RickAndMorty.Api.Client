@@ -1,14 +1,13 @@
-﻿using System.Runtime.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace RickAndMorty.Api.Client.DataAccess.Contracts.Episodes
 {
-    [DataContract]
-    internal class EpisodeDto
+    public class EpisodeDto
     {
         public int Id { get; set; }
         public string? Name { get; set; }
 
-        [DataMember(Name = "air_date")]
+        [JsonPropertyName("air_date")]
         public string? AirDate { get; set; }
         public string? Episode { get; set; }
         public List<string>? Characters { get; set; }

@@ -19,15 +19,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{C31D7699-C6D1-427B-BD63-FCFBF062B26F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RickAndMorty.Api.Client.Domain.Entities", "src\Domain\RickAndMorty.Api.Client.Entities\RickAndMorty.Api.Client.Domain.Entities.csproj", "{4B9E6CE5-C8B9-4A4C-8C2D-AE1DEC4138D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RickAndMorty.Api.Client.Domain.Entities", "src\Domain\RickAndMorty.Api.Client.Entities\RickAndMorty.Api.Client.Domain.Entities.csproj", "{4B9E6CE5-C8B9-4A4C-8C2D-AE1DEC4138D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RickAndMorty.Api.Client.DataAccess.Contracts", "src\DataAccess\RickAndMorty.Api.Client.DataAccess.Contracts\RickAndMorty.Api.Client.DataAccess.Contracts.csproj", "{E681CCC3-E34E-4A6A-A5D7-B888FAA935D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RickAndMorty.Api.Client.DataAccess.Contracts", "src\DataAccess\RickAndMorty.Api.Client.DataAccess.Contracts\RickAndMorty.Api.Client.DataAccess.Contracts.csproj", "{E681CCC3-E34E-4A6A-A5D7-B888FAA935D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RickAndMorty.Api.Client.DataAccess", "src\DataAccess\RickAndMorty.Api.Client.DataAccess\RickAndMorty.Api.Client.DataAccess.csproj", "{B69097B2-2F87-43FB-AE91-F5A683230392}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RickAndMorty.Api.Client.DataAccess", "src\DataAccess\RickAndMorty.Api.Client.DataAccess\RickAndMorty.Api.Client.DataAccess.csproj", "{B69097B2-2F87-43FB-AE91-F5A683230392}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{6D5D556D-31AC-487C-B2AF-624E01BC68EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RickAndMorty.Api.Client.CrossCutting", "src\CrossCutting\RickAndMorty.Api.Client.CrossCutting\RickAndMorty.Api.Client.CrossCutting.csproj", "{E63BEA09-468C-4429-A3BD-5E0C5A1292D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RickAndMorty.Api.Client.CrossCutting", "src\CrossCutting\RickAndMorty.Api.Client.CrossCutting\RickAndMorty.Api.Client.CrossCutting.csproj", "{E63BEA09-468C-4429-A3BD-5E0C5A1292D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
