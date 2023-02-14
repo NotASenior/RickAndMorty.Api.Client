@@ -12,10 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Locations\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="RestSharp" Version="108.0.3" />
   </ItemGroup>
 
