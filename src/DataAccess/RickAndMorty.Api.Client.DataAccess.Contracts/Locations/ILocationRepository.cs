@@ -5,7 +5,6 @@ namespace RickAndMorty.Api.Client.DataAccess.Contracts.Locations
 {
     public interface ILocationRepository
     {
-
         /// <summary>
         /// Returns a location, based on the given filter
         /// </summary>
