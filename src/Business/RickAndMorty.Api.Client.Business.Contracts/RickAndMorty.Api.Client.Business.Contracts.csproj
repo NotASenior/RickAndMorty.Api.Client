@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataAccess\RickAndMorty.Api.Client.DataAccess.Contracts\RickAndMorty.Api.Client.DataAccess.Contracts.csproj" />
+    <ProjectReference Include="..\..\Domain\RickAndMorty.Api.Client.Entities\RickAndMorty.Api.Client.Domain.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
