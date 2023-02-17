@@ -1,6 +1,8 @@
-﻿namespace RickAndMorty.Api.Client.Domain.Entities.Episodes
+﻿using RickAndMorty.Api.Client.Domain.Entities.CrossCutting;
+
+namespace RickAndMorty.Api.Client.Domain.Entities.Episodes
 {
-    internal class Episode
+    public class Episode : BaseEntity
     {
         public DateTime? AirDate { get; set; }
         public string? Code { get; set; }

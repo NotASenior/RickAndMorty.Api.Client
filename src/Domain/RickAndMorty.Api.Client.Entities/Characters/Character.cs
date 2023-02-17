@@ -2,7 +2,7 @@
 
 namespace RickAndMorty.Api.Client.Domain.Entities.Characters
 {
-    internal class Character : BaseEntity
+    public class Character : BaseEntity
     {
         public CharacterStatus Status { get; set; }
         public string? Species { get; set; }

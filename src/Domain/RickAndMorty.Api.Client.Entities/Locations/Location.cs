@@ -2,7 +2,7 @@
 
 namespace RickAndMorty.Api.Client.Domain.Entities.Locations
 {
-    internal class Location : BaseEntity
+    public class Location : BaseEntity
     {
         public string? Type { get; set; }
         public string? Dimension { get; set; }
